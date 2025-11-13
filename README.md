@@ -36,5 +36,34 @@ L’ensemble des données est stocké sous **format JSON**, rendant le projet po
 git clone https://github.com/<ton-utilisateur>/LeVergeDuCoin.git
 cd LeVergeDuCoin
 
+### Créer un environnement virtuel et l'activer 
+```bash
+python -m venv venv
+
+# Sous macOS / Linux :
+source venv/bin/activate
+
+# Sous Windows :
+venv\Scripts\activate
+
+
+###  Installer les dépendances nécessaires
+```bash
+pip install flask
+
+###  Lancer l’application
+```bash
+python app.py
+
+
+
+
+
+
+
+
+
+
+
 
 
