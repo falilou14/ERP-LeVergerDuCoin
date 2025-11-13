@@ -1,0 +1,23 @@
+[
+    {
+        "id": "CMP001",
+        "name": "Promotion d'ete",
+        "date": "2025-06-01",
+        "feedback": "Bon retour",
+        "success_rate": 65
+    },
+    {
+        "id": "CMP002",
+        "name": "Newsletter de septembre",
+        "date": "2025-09-15",
+        "feedback": "Moyen",
+        "success_rate": 75
+    },
+    {
+        "id": "CMP003",
+        "name": "Promo Black Friday",
+        "date": "2025-11-25",
+        "feedback": "Excellents resultats",
+        "success_rate": 90
+    }
+]

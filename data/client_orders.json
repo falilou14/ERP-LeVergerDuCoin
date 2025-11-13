@@ -1,0 +1,12 @@
+[
+    {"id": "C001", "name": "Jean Dupont", "email": "jean@example.com", "phone": "0601020304", "address": "12 Rue des Lilas, Paris", "category": "fidele", "last_order": "2025-01-15"},
+    {"id": "C002", "name": "Marie Dupont", "email": "marie@example.com", "phone": "0605060708", "address": "14 Rue des Roses, Lyon", "category": "Nouveau", "last_order": "2025-01-20"},
+    {"id": "C003", "name": "Paul Martin", "email": "paul.martin@example.com", "phone": "0654879654", "address": "33 Avenue des Champs, Marseille", "category": "Inactif", "last_order": "2024-12-05"},
+    {"id": "C004", "name": "Sophie Bernard", "email": "sophie.bernard@example.com", "phone": "0612345678", "address": "8 Rue des Écoles, Toulouse", "category": "fidele", "last_order": "2025-01-22"},
+    {"id": "C005", "name": "Luc Morel", "email": "luc.morel@example.com", "phone": "0678945612", "address": "21 Rue de la Paix, Bordeaux", "category": "Inactif", "last_order": "2024-11-18"},
+    {"id": "C006", "name": "Emma Lefevre", "email": "emma.lefevre@example.com", "phone": "0687452369", "address": "15 Rue du Pont, Lille", "category": "fidele", "last_order": "2025-01-18"},
+    {"id": "C007", "name": "Noah Leroy", "email": "noah.leroy@example.com", "phone": "0632147896", "address": "10 Rue des Pins, Strasbourg", "category": "Nouveau", "last_order": "2025-01-23"},
+    {"id": "C008", "name": "Chloe Dubois", "email": "chloe.dubois@example.com", "phone": "0623987412", "address": "7 Rue de la Mairie, Nice", "category": "Inactif", "last_order": "2024-10-28"},
+    {"id": "C009", "name": "Thomas Rousseau", "email": "thomas.rousseau@example.com", "phone": "0669841235", "address": "29 Rue des Acacias, Nantes", "category": "fidele", "last_order": "2025-01-10"},
+    {"id": "C010", "name": "Alice Durand", "email": "alice.durand@example.com", "phone": "0645239874", "address": "18 Rue du Parc, Montpellier", "category": "Nouveau", "last_order": "2025-01-24"}
+]

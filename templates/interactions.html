@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactions - {{ client.name }}</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success shadow">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="/">Le Verger du Coin - CRM</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="/">Dashboard</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="/clients">Clients</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Interactions -->
+    <div class="container my-5">
+        <h1 class="text-center mb-4">Interactions avec {{ client.name }}</h1>
+
+        <!-- Formulaire pour ajouter une interaction -->
+        <div class="card mb-4 shadow border-0">
+            <div class="card-body">
+                <h5 class="card-title">Ajouter une Interaction</h5>
+                <form method="POST" action="/clients/{{ client.id }}/interactions/add">
+                    <div class="row">
+                        <div class="col-md-4">
+                            <select name="type" class="form-select" required>
+                                <option value="email">Email</option>
+                                <option value="appel">Appel</option>
+                                <option value="réunion">Réunion</option>
+                            </select>
+                        </div>
+                        <div class="col-md-6">
+                            <input type="text" name="note" placeholder="Note de l'interaction" class="form-control" required>
+                        </div>
+                        <div class="col-md-2">
+                            <button type="submit" class="btn btn-success w-100">Ajouter</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+
+        <!-- Liste des interactions -->
+        <table class="table table-bordered table-striped shadow">
+            <thead class="table-success">
+                <tr>
+                    <th>Date</th>
+                    <th>Type</th>
+                    <th>Note</th>
+                </tr>
+            </thead>
+            <tbody>
+                {% for interaction in interactions %}
+                <tr>
+                    <td>{{ interaction.date }}</td>
+                    <td>{{ interaction.type }}</td>
+                    <td>{{ interaction.note }}</td>
+                </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+
+        {% if not interactions %}
+        <p class="text-center text-muted">Aucune interaction enregistrée pour ce client.</p>
+        {% endif %}
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
